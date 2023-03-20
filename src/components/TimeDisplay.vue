@@ -10,9 +10,7 @@ export default {
   },
   methods: {
     getDateTime() {
-      const d = formatWithOptions({ locale: eo },'yyyy-MM-dd\' \'HH:mm:ss')(new Date())
-      console.log(d)
-      this.currentDate = d
+      this.currentDate = formatWithOptions({ locale: eo },'yyyy-MM-dd\' \'HH:mm:ss')(new Date())
       // this.currentDate = formatWithOptions(new Date(), 'yyyy-MM-dd\'T\'HH:mm:ssXX')
     }
   }
@@ -32,3 +30,4 @@ h3 {
   text-align: left;
 }
 </style>
+
