@@ -20,6 +20,7 @@ h1 {
 li {
   font-size: 1.2rem;
 }
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

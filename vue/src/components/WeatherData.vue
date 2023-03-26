@@ -10,8 +10,8 @@ export default {
   }),
 
   created() {
-    // setInterval(this.fetchData(), 2000)
-    this.fetchData()
+    setInterval(this.fetchData(), 2000)
+    // this.fetchData()
   },
 
   methods: {
