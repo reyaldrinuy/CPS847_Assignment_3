@@ -7,6 +7,7 @@ from django.utils import timezone
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
+    facilitator = models.CharField(max_length=200, default='Mr M.')
 
     def __str__(self):
         return self.question_text
@@ -24,9 +25,9 @@ class Choice(models.Model):
         return self.choice_text
 
 
-class Facilitator(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
-    name = models.CharField(max_length=200)
+# class Facilitator(models.Model):
+#     question = models.ForeignKey(Question, on_delete=models.CASCADE)
+#     name = models.CharField(max_length=200)
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
